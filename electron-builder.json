@@ -1,0 +1,19 @@
+{
+  "appId": "com.clearsound.app",
+  "productName": "clear-sound",
+  "directories": {
+    "output": "release"
+  },
+  "files": ["dist/**", "dist-electron/**", "package.json"],
+  "asar": true,
+  "mac": {
+    "target": [{ "target": "dmg", "arch": ["arm64", "x64"] }],
+    "category": "public.app-category.books"
+  },
+  "win": {
+    "target": ["nsis"]
+  },
+  "linux": {
+    "target": ["AppImage"]
+  }
+}

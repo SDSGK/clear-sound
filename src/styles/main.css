@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* 界面主题 CSS 变量(html[data-theme] 由 src/styles/theme.js 切换) */
+:root {
+  --cs-bg: #f7f6f2;
+  --cs-fg: #333333;
+  --cs-panel: #ffffff;
+  --cs-border: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme='dark'] {
+  --cs-bg: #1c1c1e;
+  --cs-fg: #e5e5e7;
+  --cs-panel: #2c2c2e;
+  --cs-border: rgba(255, 255, 255, 0.08);
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+/* 注意:主窗背景在 App.vue(.app-shell)设置,
+   歌词窗/托盘面板窗要求 body 保持透明,此处不设全局背景 */

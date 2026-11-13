@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-electron/
+release/
+.parallel-tasks/
+*.log
+.DS_Store
+.reasonix/
